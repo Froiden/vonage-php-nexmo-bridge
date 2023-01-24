@@ -66,9 +66,9 @@ class Autoloader
      */
     private static function getClassLoader() : ClassLoader
     {
-        if (file_exists(getenv('COMPOSER_VENDOR_DIR') . '/autoload.php')) {
-            return include getenv('COMPOSER_VENDOR_DIR') . '/autoload.php';
-        }
+//         if (file_exists(getenv('COMPOSER_VENDOR_DIR') . '/autoload.php')) {
+//             return include getenv('COMPOSER_VENDOR_DIR') . '/autoload.php';
+//         }
 
         if (file_exists(__DIR__ . '/../../../autoload.php')) {
             return include __DIR__ . '/../../../autoload.php';
